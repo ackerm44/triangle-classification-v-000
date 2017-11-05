@@ -9,11 +9,11 @@ class Triangle
 
   def kind
     if @a == @b && @a == @c
-      "equilateral"
+      :equilateral
     elsif @a == @b || @b == @c || @a == @c
-      "isosceles"
+      :isosceles
     elsif @a != @b && @a != @c && @b != @c
-      "scalene"
+      :scalene
     end
   end
 end
