@@ -14,6 +14,10 @@ class Triangle
       :isosceles
     elsif @a != @b && @a != @c && @b != @c
       :scalene
+    elsif @a == 0 || @b == 0 || @c == 0
+      begin
+        raise TriangleError
+      end
     end
   end
 
